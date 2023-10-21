@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/b7d83795e2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="container-top">
+      <div class="data">
+        <div class="dataInput">
+          <label for="day">DAY</label>
+          <input type="number" name="day" id="day" min="1" max="31">
+        </div>
+
+        <div class="dataInput">
+          <label for="month">MONTH</label>
+          <input type="number" name="month" id="month" min="1" max="12">
+        </div>
+
+        <div class="dataInput">
+          <label for="year">YEAR</label>
+          <input type="number" name="year" id="year" min="1" max="2023">
+        </div>
+        <button class="submitDate" onclick="calcAge()"><i class="fa-solid fa-arrow-down fa-2xl" style="color: #ffffff;"></i></button>
+      </div>
+    </div>
+    <div class="container-bottom">
+      <div class="result">
+        <p><i><span id="resultYear">Empty</span> years</i></p>
+        <p><i><span id="resultMonth">Empty</span> months</i></p>
+        <p><i><span id="resultDay">Empty</span> days</i></p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
